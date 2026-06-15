@@ -1,0 +1,89 @@
+:root {
+    --color-principal: #f2fd5b;
+    --color-secundario: #000000;
+    --color-texto: #000000;
+    --color-fondo: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 20px;
+}
+
+#titulo-principal {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.inicio {
+    text-shadow: 2px 2px 5px black;
+    background-image: url("img/perfil.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 500px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    text-align: left;
+    color: rgb(44, 99, 71);
+
+    padding: 10px;
+    margin: 0;
+}
+
+.inicio article {
+    max-width: 800px;
+}
+
+footer {
+    background-color: var(--color-principal);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+}
