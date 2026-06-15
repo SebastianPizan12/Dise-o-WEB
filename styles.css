@@ -1,8 +1,8 @@
 :root {
-    --color-principal: #f2fd5b;
+    --color-principal: rgb(108, 93, 248);
     --color-secundario: #000000;
-    --color-texto: #000000;
-    --color-fondo: #ffffff;
+    --color-texto: #ffffff;
+    --color-fondo: rgb(108, 93, 248);
 }
 
 body {
@@ -25,7 +25,7 @@ header {
 }
 
 .navbar {
-    background-color: #222;
+    background-color: #222222;
     padding: 15px;
 }
 
@@ -40,13 +40,15 @@ header {
 }
 
 .navbar a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: #ffd700;
+    color: rgb(108, 93, 248);
+    font-size: 18px;
 }
 
 .contenido {
@@ -57,7 +59,7 @@ header {
 }
 
 .inicio {
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
     background-image: url("img/perfil.jpg");
     background-size: cover;
     background-position: center;
@@ -71,19 +73,84 @@ header {
     align-items: flex-end;
 
     text-align: left;
-    color: rgb(44, 99, 71);
+    color: rgb(77, 69, 43);
 
     padding: 10px;
     margin: 0;
+}
+
+.foto-perfil{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgb(108, 93, 248);
 }
 
 .inicio article {
     max-width: 800px;
 }
 
+.proyectos {
+    text-align: center;
+    padding: 40px;
+    border-bottom: 3px solid #cccccc;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectos img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+
+.habilidades {
+    text-align: center;
+    padding: 40px;
+    border-bottom: 3px solid #cccccc;
+}
+
+.contenedor-habilidades {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.habilidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidad img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.habilidad p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
 footer {
     background-color: var(--color-principal);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 15px;
 }
