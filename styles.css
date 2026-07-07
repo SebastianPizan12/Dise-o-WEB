@@ -90,6 +90,17 @@ header {
     max-width: 800px;
 }
 
+.sobre-mi{
+    width: 80%;
+    margin: 40px auto;
+    line-height: 1.8;
+}
+
+.sobre-mi h2,
+.sobre-mi h3{
+    color: var(--color-principal);
+}
+
 .proyectos {
     text-align: center;
     padding: 40px;
@@ -114,7 +125,6 @@ header {
     height: 300px;
     object-fit: contain;
 }
-
 
 
 .habilidades {
@@ -147,10 +157,95 @@ header {
     font-weight: bold;
 }
 
+.habilidades-detalle{
+    width: 90%;
+    margin: 40px auto;
+}
+
+.habilidades-detalle h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.habilidad{
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.habilidad img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.habilidad h3{
+    margin: 15px 0;
+}
 
 footer {
-    background-color: var(--color-principal);
-    color: rgb(255, 255, 255);
+    background-color: #000000;
+    color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+}
+
+.habilidad{
+    transition: .4s;
+    cursor: pointer;
+}
+
+.habilidad img{
+    transition: .4s;
+}
+
+.habilidad:hover{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,.3);
+}
+
+.habilidad:hover img{
+    transform: rotate(360deg);
+}
+
+.habilidad:hover h3,
+.habilidad:hover p{
+    color: #000000;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.texto-presentacion{
+    flex: 1;
+}
+
+.imagen-presentacion img{
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+.objetivos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.texto-objetivos{
+    flex: 1;
+}
+
+.imagen-objetivos img{
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
 }
