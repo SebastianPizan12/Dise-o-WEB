@@ -1,0 +1,254 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --principal: #6c5df8;
+  --oscuro: #212529;
+  --claro: #ffffff;
+  --gris: #f4f6fb;
+}
+
+header {
+  background: linear-gradient(135deg, #6c5df8, #5145d4);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 40px 20px;
+}
+
+.foto-perfil {
+  width: 160px;
+
+  height: 160px;
+
+  border-radius: 50%;
+
+  border: 5px solid white;
+
+  object-fit: cover;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#titulo-principal {
+  margin-top: 20px;
+
+  font-weight: 700;
+}
+
+header p {
+  font-size: 18px;
+}
+
+.navbar {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-brand i {
+  margin-right: 8px;
+}
+
+.nav-link {
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #6c5df8 !important;
+}
+
+.nav-link i {
+  margin-right: 5px;
+}
+
+.inicio {
+  padding: 70px 0;
+}
+
+.inicio h2 {
+  font-size: 45px;
+
+  font-weight: 700;
+
+  color: #6c5df8;
+}
+
+.inicio p {
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+.inicio img {
+  max-height: 450px;
+
+  object-fit: cover;
+}
+
+h2 {
+  color: #6c5df8;
+
+  font-weight: 700;
+}
+
+h3 {
+  color: #6c5df8;
+
+  font-weight: 600;
+}
+
+.card {
+  border: none;
+
+  transition: 0.35s;
+}
+
+.card img {
+  object-fit: cover;
+
+  height: 250px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  color: #6c5df8;
+
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #6c5df8;
+
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #4d41d9;
+}
+
+.btn-light {
+  font-weight: 600;
+}
+
+.col img {
+  transition: 0.4s;
+}
+
+.col img:hover {
+  transform: scale(1.15);
+}
+
+.list-group-item {
+  border: none;
+
+  margin-bottom: 8px;
+
+  border-radius: 8px;
+}
+
+.form-control {
+  border-radius: 10px;
+
+  padding: 12px;
+}
+
+textarea {
+  resize: none;
+}
+
+footer {
+  background: #212529;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px 10px;
+
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 8px;
+}
+
+footer i {
+  color: #6c5df8;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  .inicio {
+    text-align: center;
+  }
+
+  .inicio img {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #titulo-principal {
+    font-size: 28px;
+  }
+
+  .inicio h2 {
+    font-size: 35px;
+  }
+
+  header {
+    padding: 30px 10px;
+  }
+
+  .foto-perfil {
+    width: 130px;
+
+    height: 130px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inicio h2 {
+    font-size: 30px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}
+
+.card-body img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
