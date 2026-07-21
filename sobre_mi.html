@@ -1,79 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<header>
-    <img src="img/cv.jpg" alt="Foto de Sebastián" class="foto-perfil">
-    <h1 id="titulo-principal">Sebastián Pizán Vicuña</h1>
-    <p>Diseñador Gráfico & Desarrollador de Software</p>
-</header>
+    <title>Sobre mí | Sebastián Pizán Vicuña</title>
 
-<nav class="navbar">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre_mi.html">Sobre mí</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="habilidades.html">Habilidades</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-</nav>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<main>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-<section class="sobre-mi">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <h2>Sobre mí</h2>
-    <p>
-        Mi nombre es Jesús Sebastián Pizán Vicuña, tengo 22 años y actualmente estudio la carrera de Diseño
-        Gráfico en ISIL. Además, cuento con formación técnica en Desarrollo de Software,
-        lo que me ha permitido adquirir conocimientos en la creación de páginas web.
-    </p>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-    <h3>Formación Académica</h3>
-    <p>
-        Actualmente curso la carrera de Diseño Gráfico en ISIL, donde desarrollo
-        habilidades relacionadas con la comunicación visual, identidad de marca,
-        diseño editorial y publicidad digital.
-    </p>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-    <p>
-        Paralelamente, mi formación en Desarrollo de Software me ha permitido aprender
-        HTML, CSS y otras herramientas utilizadas en la creación de sitios web.
-    </p>
+  <body>
+    <header>
+      <img src="img/cv.jpg" alt="Foto de Sebastián" class="foto-perfil" />
 
-    <h3>Objetivos Profesionales</h3>
-    <div class="objetivos">
-    <div class="texto-objetivos">
-    <p>
-        Mi objetivo es combinar el diseño gráfico con el desarrollo web para crear
-        proyectos modernos, funcionales y visualmente atractivos. Busco seguir
-        adquiriendo experiencia profesional siendo testigo de la innovación digital 
-        a lo largo del tiempo..
-    </p>
-    </div>
+      <h1 id="titulo-principal">Sebastián Pizán Vicuña</h1>
 
-    <div class="imagen-objetivos">
-    <img src="img/objetivos.webp" alt="Objetivos profesionales">
-    </div>
+      <p>Diseñador Gráfico & Desarrollador Web</p>
+    </header>
 
-</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fa-solid fa-laptop-code"></i> Portafolio
+        </a>
 
-</section>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-</main>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fa-solid fa-house"></i> Inicio
+              </a>
+            </li>
 
-<footer>
-    <p>Diseñador Gráfico & Desarrollador de Software</p>
-    <p>Whatsapp: 995722661</p>
-    <p>sebaspivi04@gmail.com</p>
-    <p>© 2026 Sebastián Pizán Vicuña</p>
-</footer>
+            <li class="nav-item">
+              <a class="nav-link active" href="sobre_mi.html">
+                <i class="fa-solid fa-user"></i> Sobre mí
+              </a>
+            </li>
 
-</body>
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos.html">
+                <i class="fa-solid fa-briefcase"></i> Proyectos
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="habilidades.html">
+                <i class="fa-solid fa-code"></i> Habilidades
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">
+                <i class="fa-solid fa-envelope"></i> Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7" data-aos="fade-right">
+            <h2 class="mb-4">Sobre mí</h2>
+
+            <p>
+              Mi nombre es <strong>Jesús Sebastián Pizán Vicuña</strong>, tengo
+              22 años y actualmente estudio la carrera de Diseño Gráfico en
+              ISIL.
+            </p>
+
+            <p>
+              Además, cuento con formación técnica en Desarrollo de Software, lo
+              que me ha permitido desarrollar conocimientos en HTML, CSS y
+              herramientas para la creación de sitios web modernos.
+            </p>
+
+            <p>
+              Me considero una persona responsable, creativa y con muchas ganas
+              de seguir aprendiendo nuevas tecnologías relacionadas con el
+              diseño y el desarrollo web.
+            </p>
+          </div>
+
+          <div class="col-lg-5 text-center" data-aos="fade-left">
+            <img
+              src="img/cv.jpg"
+              class="img-fluid rounded shadow"
+              alt="Sebastián"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="row">
+          <div class="col-md-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h3>
+                  <i class="fa-solid fa-graduation-cap"></i>
+
+                  Formación Académica
+                </h3>
+
+                <p>
+                  Actualmente curso la carrera de Diseño Gráfico en ISIL, donde
+                  desarrollo habilidades relacionadas con identidad visual,
+                  branding, publicidad, diseño editorial y contenido digital.
+                </p>
+
+                <p>
+                  Mi formación en Desarrollo de Software complementa estos
+                  conocimientos con HTML, CSS y fundamentos del desarrollo web.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h3>
+                  <i class="fa-solid fa-bullseye"></i>
+
+                  Objetivos Profesionales
+                </h3>
+
+                <p>
+                  Mi objetivo es combinar el diseño gráfico con el desarrollo
+                  web para crear experiencias digitales modernas, funcionales y
+                  visualmente atractivas.
+                </p>
+
+                <p>
+                  Busco adquirir experiencia profesional participando en
+                  proyectos que me permitan seguir creciendo y enfrentar nuevos
+                  retos tecnológicos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7" data-aos="fade-right">
+            <h2>¿Por qué elegí esta carrera?</h2>
+
+            <p>
+              Siempre me ha interesado la creatividad y la tecnología. Gracias
+              al Diseño Gráfico puedo comunicar ideas mediante elementos
+              visuales, mientras que el Desarrollo Web me permite convertir esos
+              diseños en sitios funcionales e interactivos.
+            </p>
+
+            <p>
+              La combinación de ambas áreas me permite ofrecer soluciones
+              completas para proyectos digitales.
+            </p>
+          </div>
+
+          <div class="col-lg-5 text-center" data-aos="fade-left">
+            <img
+              src="img/objetivos.webp"
+              class="img-fluid rounded shadow"
+              alt="Objetivos"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Diseñador Gráfico & Desarrollador Web</p>
+
+      <p>
+        <i class="fa-brands fa-whatsapp"></i>
+
+        995 722 661
+      </p>
+
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+
+        sebaspivi04@gmail.com
+      </p>
+
+      <p>© 2026 Sebastián Pizán Vicuña</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
 </html>

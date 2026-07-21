@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contacto | Sebastián Pizán Vicuña</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="img/cv.jpg" alt="Foto de Sebastián" class="foto-perfil" />
+
+      <h1 id="titulo-principal">Sebastián Pizán Vicuña</h1>
+
+      <p>Diseñador Gráfico & Desarrollador Web</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fa-solid fa-laptop-code"></i> Portafolio
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fa-solid fa-house"></i> Inicio
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sobre_mi.html">
+                <i class="fa-solid fa-user"></i> Sobre mí
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos.html">
+                <i class="fa-solid fa-briefcase"></i> Proyectos
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="habilidades.html">
+                <i class="fa-solid fa-code"></i> Habilidades
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">
+                <i class="fa-solid fa-envelope"></i> Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2>Contáctame</h2>
+
+          <p>
+            Si deseas comunicarte conmigo para algún proyecto o consulta, puedes
+            utilizar el siguiente formulario o mis datos de contacto.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4" data-aos="fade-right">
+            <div class="card shadow">
+              <div class="card-body">
+                <h3 class="mb-4">
+                  <i class="fa-solid fa-paper-plane"></i>
+
+                  Envíame un mensaje
+                </h3>
+
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label"> Nombre </label>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Ingrese su nombre"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label"> Correo electrónico </label>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="ejemplo@correo.com"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label"> Asunto </label>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Ingrese el asunto"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label"> Mensaje </label>
+
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      placeholder="Escriba su mensaje"
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">
+                    Enviar mensaje
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="card shadow">
+              <div class="card-body">
+                <h3 class="mb-4">Información de contacto</h3>
+
+                <p>
+                  <i class="fa-brands fa-whatsapp text-success"></i>
+
+                  <strong> WhatsApp</strong>
+
+                  <br />
+
+                  995 722 661
+                </p>
+
+                <hr />
+
+                <p>
+                  <i class="fa-solid fa-envelope text-danger"></i>
+
+                  <strong> Correo</strong>
+
+                  <br />
+
+                  sebaspivi04@gmail.com
+                </p>
+
+                <hr />
+
+                <p>
+                  <i class="fa-solid fa-location-dot text-primary"></i>
+
+                  <strong> Ubicación</strong>
+
+                  <br />
+
+                  Lima, Perú
+                </p>
+
+                <hr />
+
+                <p>
+                  <i class="fa-solid fa-user-graduate"></i>
+
+                  <strong> Institución</strong>
+
+                  <br />
+
+                  ISIL
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Diseñador Gráfico & Desarrollador Web</p>
+
+      <p>
+        <i class="fa-brands fa-whatsapp"></i>
+
+        995 722 661
+      </p>
+
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+
+        sebaspivi04@gmail.com
+      </p>
+
+      <p>© 2026 Sebastián Pizán Vicuña</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
